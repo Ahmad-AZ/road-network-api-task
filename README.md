@@ -14,23 +14,6 @@ A simple REST API for managing road networks with version control, using **FastA
 2. Update networks by adding new edges (old edges marked outdated).
 3. Retrieve network edges in GeoJSON format (with timestamp filter).
 
----
-
-## Project Structure
-
-
-.
-├── app/
-│   ├── main.py           → FastAPI entry point
-│   ├── models.py         → SQLAlchemy models with geometry support
-│   ├── database.py       → DB connection (PostgreSQL + PostGIS)
-│   ├── schemas.py        → Pydantic models (optional)
-│   └── routers/
-│       └── networks.py   → All API routes
-├── requirements.txt      → Python dependencies
-├── Dockerfile            → Builds the FastAPI app
-├── docker-compose.yml    → Runs FastAPI + PostGIS together
-└── README.md
 
 ---
 
